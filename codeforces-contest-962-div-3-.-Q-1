@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int t;
+    
+    cin>>t;
+    
+    while(t--){
+        
+        int n;
+        
+        cin>>n;
+        
+        int c = 0;
+        
+        while(n >= 4){
+            c++;
+            n -= 4;
+        }
+        
+        
+        if(n > 0)c++;
+        
+        cout<<c<<endl;
+    }
+
+    return 0;
+}
